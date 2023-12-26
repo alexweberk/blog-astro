@@ -1,12 +1,4 @@
-# Astrofy | Personal Portfolio Website Template
-
-![Astrofy | Personal Porfolio Website Template](public/social_img.png)
-
-Astrofy is a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS. Create in minutes a website with a Blog, CV, Project Section, Store, and RSS Feed.
-
-## Demo
-
-View a live demo of [Astrofy](https://astrofy-template.netlify.app/)
+# Personal blog template
 
 ## Installation
 
@@ -104,18 +96,21 @@ The timeline components are used to confirm the CV.
 
 ```html
 <div class="time-line-container">
-  <TimeLineElement title="Element Title" subtitle="Subtitle">
-    Content that can contain
-    <div>divs</div>
-    and <span>anything else you want</span>.
-  </TimeLineElement>
-  ...
+	<TimeLineElement
+		title="Element Title"
+		subtitle="Subtitle"
+	>
+		Content that can contain
+		<div>divs</div>
+		and <span>anything else you want</span>.
+	</TimeLineElement>
+	...
 </div>
 ```
 
 #### Card & HorizontalCard
 
-The cards are primarly used for the Project and the Blog components. They include a picture, a title, and a description. 
+The cards are primarly used for the Project and the Blog components. They include a picture, a title, and a description.
 
 ```html
 <HorizontalCard title="Card Title" img="imge_url" desc="Description" url="Link
@@ -125,47 +120,47 @@ tags={['Array','of','tags']} />
 
 #### HorizontalCard Shop Item
 
-
 This component is already included in the Store layout of the template. In case you want to use it in another place these are the props.
 
 ```html
 <HorizontalShopItem
-  title="Item Title"
-  img="imge_url"
-  desc="Item description"
-  pricing="current_price"
-  oldPricing="old_price"
-  checkoutUrl="external store checkout url"
-  badge="Optional badge"
-  url="item details url"
-  custom_link="Custom link url"
-  custom_link_label="Cutom link btn label"
-  target="Optional link target (_self default)"
+	title="Item Title"
+	img="imge_url"
+	desc="Item description"
+	pricing="current_price"
+	oldPricing="old_price"
+	checkoutUrl="external store checkout url"
+	badge="Optional badge"
+	url="item details url"
+	custom_link="Custom link url"
+	custom_link_label="Cutom link btn label"
+	target="Optional link target (_self default)"
 />
 ```
 
 #### Adding a Custom Component
 
-To add a custom component, you can create a .astro file in the components folder under the source folder. 
+To add a custom component, you can create a .astro file in the components folder under the source folder.
 
-Components must follow this template. The ```---``` represents the code fence and uses Javascript and can be used for imports. 
+Components must follow this template. The `---` represents the code fence and uses Javascript and can be used for imports.
 
-The HTML component is the actual style of your new component. 
+The HTML component is the actual style of your new component.
 
 ```html
 ---
 // Component Script (JavaScript)
 ---
+
 <!-- Component Template (HTML + JS Expressions) -->
 ```
 
-For more details, see the [astro components](https://docs.astro.build/en/core-concepts/astro-components/) documentation here. 
+For more details, see the [astro components](https://docs.astro.build/en/core-concepts/astro-components/) documentation here.
 
 ### Layouts
 
 Include `BaseLayout` in each page you add and `PostLayout` to your post pages.
 
-The BaseLayout defines a general template for each new webpage you want to add. It imports constants SITE_TITLE and SITE_DESCRIPTION which can be modified in the ```../config``` folder. Data placed there can be imported anywhere using import. 
+The BaseLayout defines a general template for each new webpage you want to add. It imports constants SITE_TITLE and SITE_DESCRIPTION which can be modified in the `../config` folder. Data placed there can be imported anywhere using import.
 
 ### Content
 
