@@ -2,7 +2,7 @@
 title: "Zephyr-7b-alpha を無理やり日本語で試す"
 description: "今回試してみる Zephyr-7B-alpha は、Hugging Face 社によって開発された言語モデルのシリーズで、 mistral-7b に対するファインチューンとなっています。"
 pubDate: "2022-10-17"
-heroImage: "/src/content/images/rectangle_large_type_2_e5b5a617a7ed2cbf2b5eb3c1c0bfd006.webp"
+heroImage: "../images/rectangle_large_type_2_e5b5a617a7ed2cbf2b5eb3c1c0bfd006.webp"
 badge: ""
 tags: ["zephyr", "llms"]
 ---
