@@ -1,0 +1,73 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout
+	title="Resume"
+	sideBarActiveItemID="about"
+>
+	<div class="mb-5">
+		<div class="text-3xl w-full font-bold">Profile</div>
+	</div>
+
+	<div class="mb-10 text-justify">
+		Hi, I'm Alex Ishida Weber, COO @ Rebase, Inc. Interested in AI / Machine
+		Learning / LLMs / Growth.
+
+		<br />
+		<br />
+		 Expanding space-sharing through instabase (インスタベース) at Rebase Inc.
+		Launched UberEATS Tokyo. Strengths in Growth (esp.
+		Strategy/SEO/PPC/Marketing Engineering), Data Science (Python/SQL/PyTorch),
+		and Product/Project Management. Fully bilingual in English and Japanese.
+	</div>
+
+	<div class="mb-5">
+		<div class="text-3xl w-full font-bold">Work Experience</div>
+	</div>
+
+	<div class="time-line-container mb-10">
+		<TimeLineElement
+			title="COO - Rebase, Inc."
+			subtitle="From 2017 to Present in Tokyo, Japan"
+		>
+			Leading the company's growth as COO.
+		</TimeLineElement>
+		<TimeLineElement
+			title="Operations Logistics Manager at Uber Technologies, Inc."
+			subtitle="From 2016 to 2017 in Tokyo, Japan."
+		>
+			Planned and launched UberEATS Tokyo.
+		</TimeLineElement>
+		<TimeLineElement
+			title="Marketing & Growth Manager at FlyData, Inc."
+			subtitle="From 2013 to 2015 in Palo Alto, CA, USA."
+		>
+			Managed and led growth initiatives, helping the company grow its customers
+			and revenue.
+		</TimeLineElement>
+	</div>
+
+	<div class="mb-5">
+		<div class="text-3xl w-full font-bold">Education</div>
+	</div>
+
+	<div class="time-line-container grid gap-4 mb-10">
+		<TimeLineElement
+			title="B.S. Business Administration, San Jose State University"
+			subtitle="2009 to 2012 at San Jose, CA, USA"
+		/>
+	</div>
+
+	<div class="mb-5">
+		<div class="text-3xl w-full font-bold">Skills</div>
+	</div>
+
+	<ul class="list-disc md:columns-5 columns-2 mx-6">
+		<li>Data Science</li>
+		<li>Growth</li>
+		<li>Management</li>
+		<li>Programming</li>
+	</ul>
+</BaseLayout>
